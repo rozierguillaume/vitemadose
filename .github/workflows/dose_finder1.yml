@@ -2,8 +2,8 @@ name: dose_finder1
 
 on:
   push:
-    #branches:
-      #- main
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
