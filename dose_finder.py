@@ -70,11 +70,13 @@ def import_last_output():
 
     return dict_json
 
-def export_data(dep, slots, urls, noms):
+def export_data(dep, slots, urls, noms, departements, departements_noms):
     dict_json = import_last_output()
 
     dict_json[dep] = {"slots": slots, "urls": urls, "noms": noms}
     dict_json["last_dep_updated"] = dep
+    dict_json["departements"] = departements
+    dict_json["departements_noms"] = departements_noms
 
     with open("data/output/slots_dep.json", "w") as outfile:
         outfile.write(json.dumps(dict_json))
@@ -86,7 +88,7 @@ def get_last_updated_dep():
 
 def import_departements():
     df = pd.read_csv('data/input/departements-france.csv')
-    return df.code_departement.astype(str).to_list()
+    return df.code_departement.astype(str).to_list(), df.nom_departement.astype(str).to_list()
 
 def main():
     print("Starting...")
@@ -96,7 +98,7 @@ def main():
 
     df["com_cp"] = df["com_cp"].astype("str")
     df = df[df.rdv_site_web.str.match(r'(.*doctolib.*)')==True]
-    departements = import_departements()
+    departements, departements_noms = import_departements()
 
     last_updated_dep = get_last_updated_dep()
     if(last_updated_dep=="no"):
@@ -127,6 +129,6 @@ def main():
             except:
                 print("not found")
 
-        export_data(dep, slots, urls, noms)
+        export_data(dep, slots, urls, noms, departements, )
 
 main()
