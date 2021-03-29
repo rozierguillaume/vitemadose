@@ -2,10 +2,10 @@ name: automerge
 on:
   pull_request:
     types:
-      - labeled
+      #- labeled
       #- unlabeled
       #- synchronize
-      #- opened
+      - opened
       #- edited
       #- ready_for_review
       #- reopened
