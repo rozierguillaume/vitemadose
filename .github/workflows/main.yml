@@ -33,4 +33,4 @@ jobs:
 
     - name: Dose Finder
       run: |
-        python dose_finder.py
+        python3 dose_finder.py
