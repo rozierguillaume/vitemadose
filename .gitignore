@@ -1,3 +1,4 @@
+*.log
 geckodriver.log
 
 # Byte-compiled / optimized / DLL files
