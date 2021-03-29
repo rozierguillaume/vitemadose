@@ -49,6 +49,6 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
-        labels: automerge_dose_finder1
+        labels: automerge
         token: ${{ secrets.GRZ_TOKEN }}
         title: Auto Pull Request (dose_finder1)
