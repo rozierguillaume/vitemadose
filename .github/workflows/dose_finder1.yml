@@ -1,4 +1,4 @@
-name: Python application
+name: dose_finder1
 
 on:
   push:
