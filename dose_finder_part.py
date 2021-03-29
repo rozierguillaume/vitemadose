@@ -102,9 +102,9 @@ def main():
 
     df["com_cp"] = df["com_cp"].astype("str")
     df = df[df.rdv_site_web.str.match(r'(.*doctolib.*)')==True]
-    departements, departements_noms = import_departements()
+    departements_all, departements_noms = import_departements()
 
-    departements = departements[max(0, dep_min) : min(len(departements)-1, dep_max)]
+    departements = departements_all[max(0, dep_min) : min(len(departements)-1, dep_max)]
 
     last_updated_dep = get_last_updated_dep(dep_min)
     if(last_updated_dep=="no"):
@@ -115,7 +115,7 @@ def main():
     if(id_last_updated > len(departements)-1):
         id_last_updated = dep_min
 
-    for dep in [departements[id_last_updated]]:
+    for dep in [departements_all[id_last_updated]]:
         print("DEP ======", dep)
 
         df_dep = df[df.com_cp.str.match(r'(^{}.*)'.format(dep))==True]
