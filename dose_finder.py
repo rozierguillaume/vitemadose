@@ -1,5 +1,3 @@
-print("ok")
-
 from selenium.webdriver import Firefox
 from selenium.webdriver import ActionChains
 from selenium.webdriver.firefox.options import Options
@@ -9,6 +7,7 @@ import requests
 import pandas as pd
 import json
 from datetime import datetime
+from datetime import timedelta
 
 def search_slot(url):
     opts = Options()
@@ -73,7 +72,7 @@ def import_last_output():
 def export_data(dep, slots, urls, noms, departements, departements_noms):
     dict_json = import_last_output()
 
-    dict_json[dep] = {"slots": slots, "urls": urls, "noms": noms, "scan_time": datetime.now().strftime("%d/%m/%Y à %Hh%M")}
+    dict_json[dep] = {"slots": slots, "urls": urls, "noms": noms, "scan_time": (datetime.now() + timedelta(seconds=2*3600)).strftime("%d/%m/%Y à %Hh%M")}
     dict_json["last_dep_updated"] = dep
     dict_json["departements"] = departements
     dict_json["departements_noms"] = departements_noms
