@@ -112,7 +112,7 @@ def main():
     else:
         id_last_updated = departements_all.index(last_updated_dep) + 1
 
-    if(id_last_updated > len(departements)-1):
+    if(id_last_updated > len(departements_all)-1):
         id_last_updated = dep_min
 
     for dep in [departements_all[id_last_updated]]:
