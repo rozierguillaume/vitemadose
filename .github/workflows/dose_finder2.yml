@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        token: ${{ secrets.GRZ_TOKEN }}
+        token: ${{ secrets.GRZ_TOKEN2 }}
 
     - name: Set up Python 3.8.2
       uses: actions/setup-python@v2
@@ -50,5 +50,5 @@ jobs:
       uses: peter-evans/create-pull-request@v3
       with:
         labels: automerge
-        token: ${{ secrets.GRZ_TOKEN }}
+        token: ${{ secrets.GRZ_TOKEN2 }}
         title: Auto Pull Request (dose_finder2)
