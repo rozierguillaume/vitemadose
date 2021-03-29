@@ -52,3 +52,4 @@ jobs:
         labels: automerge
         token: ${{ secrets.GRZ_TOKEN2 }}
         title: Auto Pull Request (dose_finder2)
+        branch: create-pull-request-dose-finder-2
