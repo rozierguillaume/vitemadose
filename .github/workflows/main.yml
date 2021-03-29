@@ -39,15 +39,3 @@ jobs:
         python3 dose_finder.py
 
     - uses: stefanzweifel/git-auto-commit-action@v4
-    
-    - name: Dose Finder
-      run: |
-        python3 dose_finder.py
-        
-    - uses: stefanzweifel/git-auto-commit-action@v4
-    
-    - name: Dose Finder
-      run: |
-        python3 dose_finder.py
-        
-    - uses: stefanzweifel/git-auto-commit-action@v4
