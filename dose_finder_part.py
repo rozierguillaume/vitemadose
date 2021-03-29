@@ -118,7 +118,7 @@ def main():
         print("index", departements_all.index(last_updated_dep))
         id_last_updated = departements_all.index(last_updated_dep) + 1
 
-    if(id_last_updated+dep_min > dep_max):
+    if(id_last_updated > dep_max):
         print("if2")
         id_last_updated = dep_min
 
