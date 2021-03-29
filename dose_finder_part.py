@@ -15,7 +15,7 @@ import sys
 def search_slot(url):
     opts = Options()
     opts.headless = True
-    #assert opts.headless  # Operating in headless mode
+
     browser = Firefox(options=opts)
     browser.get(url)
     browser.implicitly_wait(1)
@@ -47,6 +47,7 @@ def search_slot(url):
     slot = slots[0].get_attribute("title")
 
     browser.close()
+
     return slot
 
 def fetch_centres():
