@@ -122,7 +122,7 @@ def main():
                 slot = search_slot(url)
                 slots += [slot]
                 urls += [url]
-                noms += df_dep["nom"].values[idx]
+                noms += [df_dep["nom"].values[idx]]
                 print(slot)
             except:
                 print("not found")
