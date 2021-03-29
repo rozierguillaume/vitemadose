@@ -63,6 +63,10 @@ def import_last_output():
     except:
         print("Last output not found. Starting from empty dict.")
         dict_json = {"last_dep_updated": "no"}
+
+    if(len(dict_json)==0):
+        dict_json = {"last_dep_updated": "no"}
+
     return dict_json
 
 def export_data(dep, slots, urls):
