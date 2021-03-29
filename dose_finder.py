@@ -87,7 +87,7 @@ def main():
     df = df[df.rdv_site_web.str.match(r'(.*doctolib.*)')==True]
     departements = import_departements()
 
-    for dep in departements:
+    for dep in [departements.values[0]]:
         print("DEP ======", dep)
 
         df_dep = df[df.com_cp.str.match(r'(^{}.*)'.format(dep))==True]
