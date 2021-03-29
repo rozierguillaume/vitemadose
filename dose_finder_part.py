@@ -105,16 +105,23 @@ def main():
     departements_all, departements_noms = import_departements()
 
     departements = departements_all[max(0, dep_min) : min(len(departements_all)-1, dep_max)]
+    
+    print("departements", departements)
 
     last_updated_dep = get_last_updated_dep(dep_min)
+    print("last_updated_dep", last_updated_dep)
     if(last_updated_dep=="no"):
+        print("if1")
         id_last_updated = dep_min
     else:
+        print("else")
         id_last_updated = departements_all.index(last_updated_dep) + 1
 
     if(id_last_updated+dep_min > dep_max):
+        print("if2")
         id_last_updated = dep_min
 
+    print("id_last_updated", id_last_updated)
     for dep in [departements_all[id_last_updated]]:
         print("DEP ======", dep)
 
