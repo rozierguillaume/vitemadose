@@ -129,6 +129,6 @@ def main():
             except:
                 print("not found")
 
-        export_data(dep, slots, urls, noms, departements, )
+        export_data(dep, slots, urls, noms, departements, departements_noms)
 
 main()
