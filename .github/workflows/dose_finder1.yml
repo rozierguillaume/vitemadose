@@ -42,9 +42,9 @@ jobs:
       run: |
         python3 dose_finder_part.py 0 10
         
-    - uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: Apply automatic changes (dose_finder1)
+    #- uses: stefanzweifel/git-auto-commit-action@v4
+      #with:
+        #commit_message: Apply automatic changes (dose_finder1)
     
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
