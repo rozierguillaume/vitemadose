@@ -104,7 +104,7 @@ def main():
     df = df[df.rdv_site_web.str.match(r'(.*doctolib.*)')==True]
     departements_all, departements_noms = import_departements()
 
-    departements = departements_all[max(0, dep_min) : min(len(departements)-1, dep_max)]
+    departements = departements_all[max(0, dep_min) : min(len(departements_all)-1, dep_max)]
 
     last_updated_dep = get_last_updated_dep(dep_min)
     if(last_updated_dep=="no"):
