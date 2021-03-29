@@ -1,3 +1,5 @@
+print("ok")
+
 from selenium.webdriver import Firefox
 from selenium.webdriver import ActionChains
 from selenium.webdriver.firefox.options import Options
