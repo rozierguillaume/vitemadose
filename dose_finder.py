@@ -93,7 +93,7 @@ def main():
     df = df[df.rdv_site_web.str.match(r'(.*doctolib.*)')==True]
     departements = import_departements()
 
-    last_updated_dep = get_last_updated_dep
+    last_updated_dep = get_last_updated_dep()
     if(last_updated_dep=="no"):
         id_last_updated=0
     else:
