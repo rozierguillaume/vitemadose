@@ -4059,3 +4059,621 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1617012491598	Marionette	INFO	Listening on port 45025
 1617012491720	Marionette	WARN	TLS certificate errors will be ignored for this session
 1617012497935	Marionette	INFO	Stopped listening on port 45025
+1617014623507	geckodriver	INFO	Listening on 127.0.0.1:60520
+1617014624513	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofilew6RYdh"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617014627901	Marionette	INFO	Listening on port 60528
+1617014628018	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617014632119	geckodriver	INFO	Listening on 127.0.0.1:60622
+1617014633133	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileN7GXrV"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617014639346	Marionette	INFO	Listening on port 60629
+1617014639457	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617014644287	Marionette	INFO	Stopped listening on port 60629
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1617014645715	geckodriver	INFO	Listening on 127.0.0.1:60753
+1617014646737	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileHPralV"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617014649980	Marionette	INFO	Listening on port 60760
+1617014650061	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617014653372	geckodriver	INFO	Listening on 127.0.0.1:60849
+1617014654376	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileBNThvE"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617014661304	Marionette	INFO	Listening on port 60860
+1617014661611	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617014661683	geckodriver	INFO	Listening on 127.0.0.1:60948
+1617014662701	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileBEGUno"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617014667856	Marionette	INFO	Listening on port 60967
+1617014667959	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617014668009	geckodriver	INFO	Listening on 127.0.0.1:61047
+1617014669021	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileYWHpSr"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+console.error: (new Error("Error(s) encountered during statement execution: database or disk is full", "resource://gre/modules/Sqlite.jsm", 893))
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.error: SearchService: "_init: failure initializing search:" 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 206: NS_ERROR_UNEXPECTED: SearchService previously failed to initialize
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 1283: NS_ERROR_UNEXPECTED: SearchService initialization failed
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+JavaScript error: , line 0: uncaught exception: 2147549183
+console.error: SearchSettings: "_write: Could not write to settings file:" (new Error("cannot write without any engine.", "resource://gre/modules/SearchSettings.jsm", 223))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: SearchService: "maybeReloadEngines failed" (new TypeError("defaultEngine is undefined", "resource://gre/modules/SearchService.jsm", 1085))
+JavaScript error: , line 0: uncaught exception: 2147549183
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  QuotaExceededError
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+[2021-03-29T10:44:35Z ERROR glean_core::database] Failed to record metric into glean_client_info: Error { kind: Rkv(IoError(Os { code: 28, kind: Other, message: "No space left on device" })) }
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+1617014675377	Marionette	INFO	Listening on port 61063
+1617014675511	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617014679308	geckodriver	INFO	Listening on 127.0.0.1:61190
+1617014680392	geckodriver	INFO	Listening on 127.0.0.1:61199
+1617014680441	geckodriver	INFO	Listening on 127.0.0.1:61205
+1617014681473	geckodriver	INFO	Listening on 127.0.0.1:61214
+JavaScript error: , line 0: UnknownError: Could not write chunk (size = 66) to file /var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofilew6RYdh/crashes/store.json.mozlz4.tmp. The file may be corrupt.
+1617014682511	geckodriver	INFO	Listening on 127.0.0.1:61222
+1617014683545	geckodriver	INFO	Listening on 127.0.0.1:61233
+1617014684558	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileLArroN"
+*** You are running in headless mode.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: uncaught exception: Object
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1617014689473	geckodriver	INFO	Listening on 127.0.0.1:61295
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1617014690478	geckodriver	INFO	Listening on 127.0.0.1:61305
+1617014691022	geckodriver	INFO	Listening on 127.0.0.1:61308
+1617014691437	geckodriver	INFO	Listening on 127.0.0.1:61312
+1617014692474	geckodriver	INFO	Listening on 127.0.0.1:61320
+1617014693486	geckodriver	INFO	Listening on 127.0.0.1:61328
+1617014694518	geckodriver	INFO	Listening on 127.0.0.1:61337
+1617014695531	geckodriver	INFO	Listening on 127.0.0.1:61346
+1617014696553	geckodriver	INFO	Listening on 127.0.0.1:61354
+1617014697574	geckodriver	INFO	Listening on 127.0.0.1:61362
+1617014698605	geckodriver	INFO	Listening on 127.0.0.1:61371
+1617014699631	geckodriver	INFO	Listening on 127.0.0.1:61380
+1617014712291	geckodriver	INFO	Listening on 127.0.0.1:61392
+1617014713310	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileAqoAdV"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+console.error: (new Error("Error(s) encountered during statement execution: database or disk is full", "resource://gre/modules/Sqlite.jsm", 893))
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.error: SearchService: "_init: failure initializing search:" 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 206: NS_ERROR_UNEXPECTED: SearchService previously failed to initialize
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 1283: NS_ERROR_UNEXPECTED: SearchService initialization failed
+JavaScript error: , line 0: uncaught exception: 2147549183
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  QuotaExceededError
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+[2021-03-29T10:45:15Z ERROR glean_core::database] Failed to record metric into glean_client_info: Error { kind: Rkv(IoError(Os { code: 28, kind: Other, message: "No space left on device" })) }
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+1617014715921	Marionette	INFO	Listening on port 61400
+console.error: SearchSettings: "_write: Could not write to settings file:" (new Error("cannot write without any engine.", "resource://gre/modules/SearchSettings.jsm", 223))
+JavaScript error: , line 0: uncaught exception: 2147549183
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: SearchService: "maybeReloadEngines failed" (new TypeError("defaultEngine is undefined", "resource://gre/modules/SearchService.jsm", 1085))
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+1617014715986	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: https://sdk.privacy-center.org/sdk.c0d6034b3c7177fb412cbb4b8fa4d62083c0118b.js, line 2: NS_ERROR_FAILURE
+console.error: "Could not write session state file " (new Error("", "(unknown module)")) ""
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1954: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+1617014718933	geckodriver	INFO	Listening on 127.0.0.1:61472
+1617014719951	geckodriver	INFO	Listening on 127.0.0.1:61482
+1617014720966	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileCHznMb"
+*** You are running in headless mode.
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+  QuotaExceededError
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: security-state/intermediates getLastModified() IndexedDB:   The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: security-state/cert-revocations getLastModified() IndexedDB:   The current transaction exceeded its quota limitations.
+1617015123729	geckodriver	INFO	Listening on 127.0.0.1:62089
+1617015124739	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileuUBbVd"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015127824	Marionette	INFO	Listening on port 62097
+1617015127933	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617015132567	Marionette	INFO	Stopped listening on port 62097
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5C0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+1617015133430	geckodriver	INFO	Listening on 127.0.0.1:62192
+1617015134445	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileRuo3ll"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015137892	Marionette	INFO	Listening on port 62200
+1617015137944	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+[GFX1]: ValidateTile failed
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+[GFX1]: ValidateTile failed
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+1617015140116	geckodriver	INFO	Listening on 127.0.0.1:62283
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1617015140153	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileSboHqf"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015144335	Marionette	INFO	Listening on port 62288
+1617015144388	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617015151371	geckodriver	INFO	Listening on 127.0.0.1:62391
+1617015152390	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileQce2ow"
+*** You are running in headless mode.
+1617015198662	geckodriver	INFO	Listening on 127.0.0.1:62448
+1617015199677	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofilerPrBct"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015203283	Marionette	INFO	Listening on port 62455
+1617015203349	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617015207097	geckodriver	INFO	Listening on 127.0.0.1:62555
+1617015208111	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofile5gC8H7"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015212888	Marionette	INFO	Listening on port 62564
+1617015212932	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617015217690	Marionette	INFO	Stopped listening on port 62564
+1617015218467	geckodriver	INFO	Listening on 127.0.0.1:62673
+1617015219478	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileW4yaW2"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015222566	Marionette	INFO	Listening on port 62681
+1617015222592	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617015226040	geckodriver	INFO	Listening on 127.0.0.1:62777
+1617015227058	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofilefvpOtQ"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1617015231948	Marionette	INFO	Listening on port 62785
+1617015232022	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617015232073	geckodriver	INFO	Listening on 127.0.0.1:62851
+1617015233084	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofile6l5wss"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015237247	Marionette	INFO	Listening on port 62866
+1617015237421	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617015237475	geckodriver	INFO	Listening on 127.0.0.1:62940
+1617015238492	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofile3bsoh1"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015242409	Marionette	INFO	Listening on port 62956
+1617015242456	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617015247522	geckodriver	INFO	Listening on 127.0.0.1:63063
+1617015248534	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofilezj940O"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015252932	Marionette	INFO	Listening on port 63070
+1617015253011	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617015253112	geckodriver	INFO	Listening on 127.0.0.1:63128
+1617015254142	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileMWdK9F"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015258304	Marionette	INFO	Listening on port 63144
+1617015258455	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617015258533	geckodriver	INFO	Listening on 127.0.0.1:63218
+1617015259543	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileYFZnxN"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015265117	Marionette	INFO	Listening on port 63234
+1617015265237	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: , line 0: UnknownError: Could not write chunk (size = 66) to file /var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileW4yaW2/crashes/store.json.mozlz4.tmp. The file may be corrupt.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: UnknownError: Could not write chunk (size = 66) to file /var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofilefvpOtQ/crashes/store.json.mozlz4.tmp. The file may be corrupt.
+console.warn: services.settings: main/message-groups sync already running
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: UnknownError: Could not write chunk (size = 66) to file /var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofile6l5wss/crashes/store.json.mozlz4.tmp. The file may be corrupt.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: UnknownError: Could not write chunk (size = 66) to file /var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofile3bsoh1/crashes/store.json.mozlz4.tmp. The file may be corrupt.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+console.error: "Could not write session state file " (new Error("", "(unknown module)")) ""
+JavaScript error: , line 0: UnknownError: Could not write chunk (size = 66) to file /var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofilezj940O/crashes/store.json.mozlz4.tmp. The file may be corrupt.
+JavaScript error: , line 0: uncaught exception: Object
+1617015310740	geckodriver	INFO	Listening on 127.0.0.1:63398
+JavaScript error: , line 0: UnknownError: Could not write chunk (size = 66) to file /var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileMWdK9F/crashes/store.json.mozlz4.tmp. The file may be corrupt.
+1617015311778	geckodriver	INFO	Listening on 127.0.0.1:63410
+1617015312884	geckodriver	INFO	Listening on 127.0.0.1:63418
+1617015313925	geckodriver	INFO	Listening on 127.0.0.1:63426
+JavaScript error: , line 0: uncaught exception: Object
+1617015314966	geckodriver	INFO	Listening on 127.0.0.1:63437
+1617015315977	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofilenDAbga"
+*** You are running in headless mode.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: uncaught exception: Object
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: uncaught exception: Object
+console.error: (new Error("Error(s) encountered during statement execution: database or disk is full", "resource://gre/modules/Sqlite.jsm", 893))
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1954: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1954: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1954: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1954: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+1617015319550	Marionette	INFO	Listening on port 63446
+1617015319625	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: , line 0: uncaught exception: Object
+console.error: SearchSettings: "_write: Could not write to settings file:" (new Error("", "(unknown module)"))
+console.error: "Could not write session state file " (new Error("", "(unknown module)")) ""
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/NewTabUtils.jsm, line 1363: TypeError: conn is undefined
+1617015323452	geckodriver	INFO	Listening on 127.0.0.1:63532
+1617015324466	geckodriver	INFO	Listening on 127.0.0.1:63545
+1617015325511	geckodriver	INFO	Listening on 127.0.0.1:63556
+1617015326535	geckodriver	INFO	Listening on 127.0.0.1:63567
+1617015327569	geckodriver	INFO	Listening on 127.0.0.1:63576
+1617015328603	geckodriver	INFO	Listening on 127.0.0.1:63584
+1617015329615	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofile7h9ful"
+*** You are running in headless mode.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: uncaught exception: Object
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: uncaught exception: Object
+console.error: (new Error("Error(s) encountered during statement execution: database or disk is full", "resource://gre/modules/Sqlite.jsm", 893))
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1954: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  QuotaExceededError
+console.error: SearchSettings: "_write: Could not write to settings file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1954: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015333510	Marionette	INFO	Listening on port 63591
+1617015336804	geckodriver	INFO	Listening on 127.0.0.1:63668
+1617015337809	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileqrZWhB"
+*** You are running in headless mode.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: uncaught exception: Object
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+console.error: (new Error("Error(s) encountered during statement execution: database or disk is full", "resource://gre/modules/Sqlite.jsm", 893))
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1954: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  QuotaExceededError
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+[2021-03-29T10:55:44Z ERROR glean_core::database] Failed to record metric into glean_client_info: Error { kind: Rkv(IoError(Os { code: 28, kind: Other, message: "No space left on device" })) }
+1617015345106	Marionette	INFO	Listening on port 63682
+1617015345183	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: SearchSettings: "_write: Could not write to settings file:" (new Error("", "(unknown module)"))
+console.error: "Could not write session state file " (new Error("", "(unknown module)")) ""
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1954: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1954: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1954: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+console.error: "Could not write session state file " (new Error("", "(unknown module)")) ""
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: https://sdk.privacy-center.org/sdk.c0d6034b3c7177fb412cbb4b8fa4d62083c0118b.js, line 2: NS_ERROR_FAILURE
+console.error: "Could not write session state file " (new Error("", "(unknown module)")) ""
+JavaScript error: , line 0: UnknownError: Could not write chunk (size = 66) to file /var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofilenDAbga/crashes/store.json.mozlz4.tmp. The file may be corrupt.
+JavaScript error: , line 0: uncaught exception: Object
+console.error: "Could not write session state file " (new Error("", "(unknown module)")) ""
+JavaScript error: , line 0: UnknownError: Could not open the file at /var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileqrZWhB/crashes/store.json.mozlz4.tmp for writing
+JavaScript error: , line 0: uncaught exception: Object
+1617015409284	geckodriver	INFO	Listening on 127.0.0.1:63892
+1617015410290	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofileRWEgg6"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617015416384	Marionette	INFO	Listening on port 63899
+1617015416482	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617015423820	geckodriver	INFO	Listening on 127.0.0.1:64028
+1617015424829	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/2j/m8cl1p0s6m93mbdv0n07zxqm0000gn/T/rust_mozprofilemYo4Ic"
+*** You are running in headless mode.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: (new Error("Error(s) encountered during statement execution: database or disk is full", "resource://gre/modules/Sqlite.jsm", 893))
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 893: Error: Error(s) encountered during statement execution: database or disk is full
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.error: SearchService: "_init: failure initializing search:" 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 206: NS_ERROR_UNEXPECTED: SearchService previously failed to initialize
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 1283: NS_ERROR_UNEXPECTED: SearchService initialization failed
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+JavaScript error: , line 0: uncaught exception: 2147549183
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  QuotaExceededError
+console.error: SearchSettings: "_write: Could not write to settings file:" (new Error("cannot write without any engine.", "resource://gre/modules/SearchSettings.jsm", 223))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: SearchService: "maybeReloadEngines failed" (new TypeError("defaultEngine is undefined", "resource://gre/modules/SearchService.jsm", 1085))
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+1617015428226	Marionette	INFO	Listening on port 64035
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: security-state/intermediates importChanges() IndexedDB:  importChanges() in security-state/intermediates The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: security-state/cert-revocations importChanges() IndexedDB: collections, timestamps, records importChanges() in security-state/cert-revocations A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/normandy-recipes-capabilities importChanges() IndexedDB:  importChanges() in main/normandy-recipes-capabilities The current transaction exceeded its quota limitations.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: blocklists/addons-bloomfilters importChanges() IndexedDB: collections, timestamps, records importChanges() in blocklists/addons-bloomfilters A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/top-sites importChanges() IndexedDB:  importChanges() in main/top-sites The current transaction exceeded its quota limitations.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: security-state/onecrl importChanges() IndexedDB: collections, timestamps, records importChanges() in security-state/onecrl A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/search-config importChanges() IndexedDB:  importChanges() in main/search-config The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: main/search-telemetry importChanges() IndexedDB: collections, timestamps, records importChanges() in main/search-telemetry A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: security-state/cert-revocations importChanges() IndexedDB: collections, timestamps, records importChanges() in security-state/cert-revocations A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/normandy-recipes-capabilities importChanges() IndexedDB:  importChanges() in main/normandy-recipes-capabilities The current transaction exceeded its quota limitations.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: blocklists/addons-bloomfilters importChanges() IndexedDB: collections, timestamps, records importChanges() in blocklists/addons-bloomfilters A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/top-sites importChanges() IndexedDB:  importChanges() in main/top-sites The current transaction exceeded its quota limitations.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: security-state/onecrl importChanges() IndexedDB: collections, timestamps, records importChanges() in security-state/onecrl A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/websites-with-shared-credential-backends importChanges() IndexedDB:  importChanges() in main/websites-with-shared-credential-backends The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: main/pioneer-study-addons-v1 importChanges() IndexedDB: collections, timestamps, records importChanges() in main/pioneer-study-addons-v1 A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/url-classifier-skip-urls importChanges() IndexedDB:  importChanges() in main/url-classifier-skip-urls The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: blocklists/gfx importChanges() IndexedDB: collections, timestamps, records importChanges() in blocklists/gfx A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/hijack-blocklists importChanges() IndexedDB:  importChanges() in main/hijack-blocklists The current transaction exceeded its quota limitations.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: blocklists/plugins importChanges() IndexedDB: collections, timestamps, records importChanges() in blocklists/plugins A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/password-recipes importChanges() IndexedDB:  importChanges() in main/password-recipes The current transaction exceeded its quota limitations.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: main/search-default-override-allowlist importChanges() IndexedDB: collections, timestamps, records importChanges() in main/search-default-override-allowlist A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/language-dictionaries importChanges() IndexedDB:  importChanges() in main/language-dictionaries The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: main/anti-tracking-url-decoration importChanges() IndexedDB: collections, timestamps, records importChanges() in main/anti-tracking-url-decoration A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/sites-classification importChanges() IndexedDB:  importChanges() in main/sites-classification The current transaction exceeded its quota limitations.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: pinning/pins importChanges() IndexedDB: collections, timestamps, records importChanges() in pinning/pins A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+  Message: QuotaExceededError: IndexedDB: main/top-sites importChanges() IndexedDB:  importChanges() in main/top-sites The current transaction exceeded its quota limitations.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: security-state/onecrl importChanges() IndexedDB: collections, timestamps, records importChanges() in security-state/onecrl A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/search-config importChanges() IndexedDB:  importChanges() in main/search-config The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: main/search-telemetry importChanges() IndexedDB: collections, timestamps, records importChanges() in main/search-telemetry A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/websites-with-shared-credential-backends importChanges() IndexedDB:  importChanges() in main/websites-with-shared-credential-backends The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: main/pioneer-study-addons-v1 importChanges() IndexedDB: collections, timestamps, records importChanges() in main/pioneer-study-addons-v1 A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/url-classifier-skip-urls importChanges() IndexedDB:  importChanges() in main/url-classifier-skip-urls The current transaction exceeded its quota limitations.
+console.error: services.settings: 
+  Message: InvalidStateError: IndexedDB: blocklists/gfx importChanges() IndexedDB: collections, timestamps, records importChanges() in blocklists/gfx A mutation operation was attempted on a database that did not allow mutations.
+  Stack:
+    importChanges/<@resource://services-settings/Database.jsm:116:27
+executeIDB/promise<@resource://services-settings/IDBHelpers.jsm:134:16
+executeIDB@resource://services-settings/IDBHelpers.jsm:98:17
+executeIDB@resource://services-settings/Database.jsm:366:45
+
+console.error: services.settings: 
+  Message: QuotaExceededError: IndexedDB: main/hijack-blocklists importChanges() IndexedDB:  importChanges() in main/hijack-blocklists The current transaction exceeded its quota limitations.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: services.settings: 
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.

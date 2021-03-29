@@ -8,6 +8,7 @@ import time
 import requests
 import pandas as pd
 import json
+from datetime import datetime
 
 def search_slot(url):
     opts = Options()
@@ -69,10 +70,10 @@ def import_last_output():
 
     return dict_json
 
-def export_data(dep, slots, urls):
+def export_data(dep, slots, urls, noms):
     dict_json = import_last_output()
 
-    dict_json[dep] = {"slots": slots, "urls": urls}
+    dict_json[dep] = {"slots": slots, "urls": urls, "noms": noms}
     dict_json["last_dep_updated"] = dep
 
     with open("data/output/slots_dep.json", "w") as outfile:
@@ -106,22 +107,26 @@ def main():
     if(id_last_updated >= len(departements)-1):
         id_last_updated=0
 
-    for dep in departements[id_last_updated : min(len(departements)-1, id_last_updated+5)]:
+    for dep in departements[id_last_updated : min(len(departements)-1, id_last_updated+1)]:
         print("DEP ======", dep)
 
         df_dep = df[df.com_cp.str.match(r'(^{}.*)'.format(dep))==True]
+        print("nb centres :", len(df_dep))
 
         slots=[]
         urls=[]
-        for url in df_dep["rdv_site_web"].values:
+        noms=[]
+        for (idx, url) in enumerate(df_dep["rdv_site_web"].values):
+            print("Centre n°", idx)
             try:
                 slot = search_slot(url)
                 slots += [slot]
                 urls += [url]
+                noms += df_dep["nom"].values[idx]
                 print(slot)
             except:
                 print("not found")
 
-        export_data(dep, slots, urls)
+        export_data(dep, slots, urls, noms)
 
 main()
