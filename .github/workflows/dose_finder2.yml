@@ -10,7 +10,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    if: "contains(github.event.head_commit.message, 'dose_finder2')"
+    if: "contains(github.event.head_commit.message, 'dose_finder2') || github.event_name=='workflow_dispatch'"
 
     steps:
     - uses: actions/checkout@v2
