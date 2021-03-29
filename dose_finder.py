@@ -110,16 +110,15 @@ def main():
         print("DEP ======", dep)
 
         df_dep = df[df.com_cp.str.match(r'(^{}.*)'.format(dep))==True]
-        #print(df_dep)
 
         slots=[]
         urls=[]
         for url in df_dep["rdv_site_web"].values:
-            #print(url)
             try:
                 slot = search_slot(url)
                 slots += [slot]
                 urls += [url]
+                print(slot)
             except:
                 print("not found")
 
