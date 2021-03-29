@@ -62,7 +62,7 @@ def import_last_output():
         print("Last output not found. Starting from empty dict.")
         dict_json = {}
     return dict_json
-    
+
 def export_data(dep, slots, urls):
     dict_json = import_last_output()
 
@@ -76,7 +76,9 @@ def import_departements():
     return df.code_departement.astype(str).values
 
 def main():
+    print("Starting...")
     fetch_centres()
+    print("Centres fetched")
     df = pd.read_csv('data/input/centres-vaccination.csv', sep=";", dtype={'com_cp': 'object'})
 
     df["com_cp"] = df["com_cp"].astype("str")
