@@ -54,9 +54,17 @@ def fetch_centres():
     with open('data/input/centres-vaccination.csv', 'wb') as f:
           f.write(data.content)
 
+def import_last_output():
+    try:
+        with open("data/output/slots_dep.json", "r") as f:
+            dict_json = json.load(f)
+    except:
+        print("Last output not found. Starting from empty dict.")
+        dict_json = {}
+    return dict_json
+    
 def export_data(dep, slots, urls):
-    with open("data/output/slots_dep.json", "r") as f:
-        dict_json = json.load(f)
+    dict_json = import_last_output()
 
     dict_json[dep] = {"slots": slots, "urls": urls}
 
