@@ -69,6 +69,7 @@ def export_data(dep, slots, urls):
     dict_json = import_last_output()
 
     dict_json[dep] = {"slots": slots, "urls": urls}
+    dict_json["last_dep_updated"] = dep
 
     with open("data/output/slots_dep.json", "w") as outfile:
         outfile.write(json.dumps(dict_json))
@@ -87,7 +88,7 @@ def main():
     df = df[df.rdv_site_web.str.match(r'(.*doctolib.*)')==True]
     departements = import_departements()
 
-    for dep in [departements[0]]:
+    for dep in departements[:3]:
         print("DEP ======", dep)
 
         df_dep = df[df.com_cp.str.match(r'(^{}.*)'.format(dep))==True]
