@@ -62,7 +62,7 @@ def import_last_output():
             dict_json = json.load(f)
     except:
         print("Last output not found. Starting from empty dict.")
-        dict_json = {}
+        dict_json = {"last_dep_updated": "no"}
     return dict_json
 
 def export_data(dep, slots, urls):
@@ -74,9 +74,14 @@ def export_data(dep, slots, urls):
     with open("data/output/slots_dep.json", "w") as outfile:
         outfile.write(json.dumps(dict_json))
 
+def get_last_updated_dep():
+    dict_json = import_last_output()
+    print(dict_json)
+    return dict_json["last_dep_updated"]
+
 def import_departements():
     df = pd.read_csv('data/input/departements-france.csv')
-    return df.code_departement.astype(str).values
+    return df.code_departement.astype(str).to_list()
 
 def main():
     print("Starting...")
@@ -88,7 +93,16 @@ def main():
     df = df[df.rdv_site_web.str.match(r'(.*doctolib.*)')==True]
     departements = import_departements()
 
-    for dep in departements[:3]:
+    last_updated_dep = get_last_updated_dep
+    if(last_updated_dep=="no"):
+        id_last_updated=0
+    else:
+        id_last_updated = departements.index(last_updated_dep)+1
+
+    if(id_last_updated >= len(departements)-1):
+        id_last_updated=0
+
+    for dep in departements[id_last_updated : min(len(departements)-1, id_last_updated+5)]:
         print("DEP ======", dep)
 
         df_dep = df[df.com_cp.str.match(r'(^{}.*)'.format(dep))==True]
