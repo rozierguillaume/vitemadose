@@ -42,3 +42,4 @@ jobs:
       uses: peter-evans/create-pull-request@v3
       with:
         labels: automerge
+        token: ${{ secrets.GRZ_TOKEN }}
