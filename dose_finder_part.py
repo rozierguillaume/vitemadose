@@ -105,7 +105,7 @@ def main():
     departements_all, departements_noms = import_departements()
 
     departements = departements_all[max(0, dep_min) : min(len(departements_all)-1, dep_max)]
-    
+
     print("departements", departements)
 
     last_updated_dep = get_last_updated_dep(dep_min)
@@ -115,6 +115,7 @@ def main():
         id_last_updated = dep_min
     else:
         print("else")
+        print("index", departements_all.index(last_updated_dep))
         id_last_updated = departements_all.index(last_updated_dep) + 1
 
     if(id_last_updated+dep_min > dep_max):
