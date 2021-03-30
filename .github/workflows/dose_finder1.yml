@@ -2,7 +2,8 @@ name: dose_finder1
 
 on:
   schedule:
-  - cron: "*/5 * * * *"
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/2 * * * *'
   
   workflow_dispatch:
   #push:
