@@ -72,8 +72,8 @@ def import_last_metadata(dep_min):
 
 def export_data(dep, slots, urls, noms, departements, departements_noms, dep_min, noms_pas_de_rdv, urls_pas_de_rdv):
     dict_json = {}
-    dict_json = {"slots": slots, "urls": urls, "noms": noms, "scan_time": (datetime.now() + timedelta(seconds=2*3600)).strftime("%d/%m/%Y à %Hh%M")\
-                "urls_pas_de_rdv": urls_pas_de_rdv, "noms_pas_de_rdv": noms_pas_de_rdv}
+    dict_json = {"slots": slots, "urls": urls, "noms": noms, "scan_time": (datetime.now() + timedelta(seconds=2*3600)).strftime("%d/%m/%Y à %Hh%M"),\
+        "urls_pas_de_rdv": urls_pas_de_rdv, "noms_pas_de_rdv": noms_pas_de_rdv}
     dict_json["last_dep_updated"] = dep
 
     with open("data/output/temp/{}.json".format(dep), "w+") as outfile:
