@@ -16,7 +16,7 @@ jobs:
     continue-on-error: true
     runs-on: ubuntu-latest
     outputs:
-      should_skip: ${{ contains(github.event.head_commit.message, 'dose_finder1') || github.event_name=='workflow_dispatch' }}
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
     steps:
       - id: skip_check
         uses: fkirc/skip-duplicate-actions@master
@@ -28,7 +28,7 @@ jobs:
     needs: pre_job
     #if: ${{ needs.pre_job.outputs.should_skip != 'true' }}
     runs-on: ubuntu-latest
-    if: ${{ needs.pre_job.outputs.should_skip != 'true' }}
+    if: ${{ (needs.pre_job.outputs.should_skip != 'true') && (contains(github.event.head_commit.message, 'dose_finder1') || github.event_name=='workflow_dispatch') }}
     #if: "contains(github.event.head_commit.message, 'dose_finder1') || github.event_name=='workflow_dispatch'"
 
     steps:
