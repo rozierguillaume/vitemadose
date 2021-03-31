@@ -1,16 +1,34 @@
 name: dose_finder_10
 
 on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/5 * * * *'
+    
   push:
     branches:
       - main
   workflow_dispatch:
 
 jobs:
+  pre_job:
+    continue-on-error: true
+    runs-on: ubuntu-latest 
+    if: ${{ (contains(github.event.head_commit.message, 'dose_finder_10') || github.event_name=='workflow_dispatch' || github.event_name=='schedule') }}
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@master
+        with:
+          concurrent_skipping: 'same_content'
+          do_not_skip: '[]' #'["pull_request", "workflow_dispatch", "schedule"]'
+          
   build:
-
+    needs: pre_job
+    if: ${{ (needs.pre_job.outputs.should_skip != 'true') && (contains(github.event.head_commit.message, 'dose_finder_10') || github.event_name=='workflow_dispatch' || github.event_name=='schedule') }}
     runs-on: ubuntu-latest
-    if: "contains(github.event.head_commit.message, 'dose_finder_10') || github.event_name=='workflow_dispatch'"
+    #if: "contains(github.event.head_commit.message, 'dose_finder_10') || github.event_name=='workflow_dispatch'"
 
     steps:
     - uses: actions/checkout@v2
@@ -41,6 +59,10 @@ jobs:
     - name: Dose Finder
       run: |
         python3 dose_finder_part.py 91 100
+        
+    #- uses: stefanzweifel/git-auto-commit-action@v4
+      #with:
+        #commit_message: Apply automatic changes (dose_finder1)
     
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
