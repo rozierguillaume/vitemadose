@@ -74,7 +74,7 @@ def export_data(dep, slots, urls, noms, departements, departements_noms, dep_min
     dict_json = {}
     dict_json = {"slots": slots, "urls": urls, "noms": noms, "scan_time": (datetime.now() + timedelta(seconds=2*3600)).strftime("%d/%m/%Y à %Hh%M"),\
         "urls_pas_de_rdv": urls_pas_de_rdv, "noms_pas_de_rdv": noms_pas_de_rdv,\
-        "urls_autres": urls_pas_de_rdv, "noms_autres": noms_pautres}
+        "urls_autres": urls_autres, "noms_autres": noms_autres}
     dict_json["last_dep_updated"] = dep
 
     with open("data/output/temp/{}.json".format(dep), "w+") as outfile:
