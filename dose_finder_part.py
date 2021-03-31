@@ -152,6 +152,8 @@ def main():
                 print("not found")
 
         df_dep_liens_autre = df_dep_all[~df_dep_all.rdv_site_web.isna()]
+        df_dep_liens_autre = df_dep_liens_autre[df_dep_liens_autre.rdv_site_web.str.match(r'(.*doctolib.*)')==False]
+
         noms_autres, urls_autres = df_dep_liens_autre.nom.tolist(), df_dep_liens_autre.rdv_site_web.tolist()
 
         export_data(dep, slots, urls, noms, departements, departements_noms, dep_min, noms_pas_de_rdv, urls_pas_de_rdv, noms_autres, urls_autres)
