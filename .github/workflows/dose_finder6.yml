@@ -7,7 +7,7 @@ on:
     
   push:
     branches:
-      - main
+      - create-pull-request-dose-finder-6
   workflow_dispatch:
 
 jobs:
