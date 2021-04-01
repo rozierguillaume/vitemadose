@@ -9,7 +9,7 @@ on:
     branches:
       - main
   workflow_dispatch:
-  
+
 env:
   LANG: "fr_FR.UTF-8"
 
@@ -59,6 +59,11 @@ jobs:
       run: |
         if [ -f data/output/slots_dep.json ]; then cat data/output/slots_dep.json; fi
 
+    - name: Configure locales
+      run: |
+        sudo locale-gen fr_FR.UTF-8
+        sudo update-locale LANG=fr_FR.UTF-8
+        
     - name: Dose Finder
       run: |
         ./configure.sh
