@@ -58,6 +58,8 @@ jobs:
 
     - name: Dose Finder
       run: |
+        ./configure.sh
+        export LC_ALL=C
         python3 dose_finder_part.py 11 20
         
     #- uses: stefanzweifel/git-auto-commit-action@v4
