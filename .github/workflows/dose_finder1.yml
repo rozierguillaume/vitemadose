@@ -55,8 +55,8 @@ jobs:
 
     - name: Configure locales
       run: |
-        sudo locale-gen fr_FR.UTF-8
-        sudo update-locale LANG=fr_FR.UTF-8
+        sudo locale-gen fr_FR
+        sudo update-locale LANG=fr_FR
 
     - name: Test
       run: |
