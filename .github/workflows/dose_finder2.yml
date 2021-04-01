@@ -9,6 +9,9 @@ on:
     branches:
       - main
   workflow_dispatch:
+  
+env:
+  LANG: "fr_FR.UTF-8"
 
 jobs:
   pre_job:
