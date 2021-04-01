@@ -67,10 +67,10 @@ jobs:
 
     - name: Dose Finder
       run: |
-        echo locale -a
+        locale -a
         ./configure.sh
         export LC_ALL=C
-        echo locale -a
+        locale -a
         python3 dose_finder_part.py 0 10
         
     #- uses: stefanzweifel/git-auto-commit-action@v4
