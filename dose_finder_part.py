@@ -11,6 +11,9 @@ import json
 from datetime import datetime
 from datetime import timedelta
 import sys
+import locale
+import numpy as np
+locale.setlocale(locale.LC_TIME, "fr_FR")
 
 def search_slot(url):
     opts = Options()
@@ -70,8 +73,23 @@ def import_last_metadata(dep_min):
 
     return dict_json
 
+def sort_data(slots, noms, urls):
+
+    slots_datetime = [datetime.strptime(date[:-6] + " 2021", "%a. %d %b. %Y") for date in slots]
+
+    idx = np.argsort(slots_datetime)
+
+    slots = list(np.array(slots)[idx])
+    noms = list(np.array(noms)[idx])
+    urls = list(np.array(urls)[idx])
+
+    return slots, noms, urls
+
 def export_data(dep, slots, urls, noms, departements, departements_noms, dep_min, noms_pas_de_rdv, urls_pas_de_rdv, noms_autres, urls_autres):
     dict_json = {}
+
+    slots, noms, urls = sort_data(slots, noms, urls)
+
     dict_json = {"slots": slots, "urls": urls, "noms": noms, "scan_time": (datetime.now() + timedelta(seconds=2*3600)).strftime("%d/%m/%Y à %Hh%M"),\
         "urls_pas_de_rdv": urls_pas_de_rdv, "noms_pas_de_rdv": noms_pas_de_rdv,\
         "urls_autres": urls_autres, "noms_autres": noms_autres}
