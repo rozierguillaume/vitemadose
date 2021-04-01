@@ -54,6 +54,10 @@ jobs:
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
+    - name: Configure locales
+      run: |
+        ./configure.sh
+
     - name: Test
       run: |
         if [ -f data/output/slots_dep.json ]; then cat data/output/slots_dep.json; fi
