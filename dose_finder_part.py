@@ -75,13 +75,13 @@ def import_last_metadata(dep_min):
 
 def sort_data(slots, noms, urls):
 
-    slots_datetime = [datetime.strptime(date[:-6] + " 2021", "%a. %d %b. %Y") for date in slots]
+    #slots_datetime = [datetime.strptime(date[:-6] + " 2021", "%a. %d %b. %Y") for date in slots]
+    print(datetime.now().strftime("%a. %d %b. %Y"))
+    #idx = np.argsort(slots_datetime)
 
-    idx = np.argsort(slots_datetime)
-
-    slots = list(np.array(slots)[idx])
-    noms = list(np.array(noms)[idx])
-    urls = list(np.array(urls)[idx])
+    #slots = list(np.array(slots)[idx])
+    #noms = list(np.array(noms)[idx])
+    #urls = list(np.array(urls)[idx])
 
     return slots, noms, urls
 
