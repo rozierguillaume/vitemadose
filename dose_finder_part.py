@@ -13,7 +13,7 @@ from datetime import timedelta
 import sys
 import locale
 import numpy as np
-locale.setlocale(locale.LC_TIME, "fr_FR")
+locale.setlocale(locale.LC_TIME, "fr_FR.utf8")
 
 def search_slot(url):
     opts = Options()
