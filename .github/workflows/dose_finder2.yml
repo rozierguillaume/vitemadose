@@ -10,9 +10,6 @@ on:
       - main
   workflow_dispatch:
 
-env:
-  LANG: "fr_FR.UTF-8"
-
 jobs:
   pre_job:
     continue-on-error: true
@@ -63,11 +60,9 @@ jobs:
       run: |
         sudo locale-gen fr_FR.UTF-8
         sudo update-locale LANG=fr_FR.UTF-8
-        
+
     - name: Dose Finder
       run: |
-        ./configure.sh
-        export LC_ALL=C
         python3 dose_finder_part.py 11 20
         
     #- uses: stefanzweifel/git-auto-commit-action@v4

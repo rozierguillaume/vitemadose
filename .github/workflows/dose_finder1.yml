@@ -8,10 +8,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
-
-env:
-  LANG: "fr_FR.UTF-8"
+      - mains
 
 jobs:
   pre_job:
@@ -67,8 +64,6 @@ jobs:
 
     - name: Dose Finder
       run: |
-        ./configure.sh
-        export LC_ALL=C
         python3 dose_finder_part.py 0 10
         
     #- uses: stefanzweifel/git-auto-commit-action@v4
