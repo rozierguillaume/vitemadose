@@ -1,2 +1,0 @@
-import pandas as pd
-pd.read_csv('data/input/centres-vaccination.csv', sep=';')
