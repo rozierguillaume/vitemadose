@@ -1,7 +1,4 @@
-print("---------")
-
 from selenium.webdriver import Firefox
-from selenium.webdriver import ActionChains
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.select import Select
 import time
@@ -12,9 +9,9 @@ from datetime import datetime
 from datetime import timedelta
 import sys
 import locale
-import numpy as np
 from pathlib import Path
 
+print("---------")
 try:
     locale.setlocale(locale.LC_TIME, "fr_FR")
 except:

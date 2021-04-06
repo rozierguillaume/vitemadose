@@ -1,5 +1,4 @@
 from selenium.webdriver import Firefox
-from selenium.webdriver import ActionChains
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.select import Select
 import time
