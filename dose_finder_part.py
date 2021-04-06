@@ -11,13 +11,6 @@ import sys
 import locale
 from pathlib import Path
 
-print("---------")
-try:
-    locale.setlocale(locale.LC_TIME, "fr_FR")
-except:
-    print("Error locale")
-    pass
-
 
 def search_slot(url):
     opts = Options()
@@ -236,4 +229,10 @@ def main():
         )
 
 
-main()
+if __name__ == "__main__":
+    print("---------")
+    try:
+        locale.setlocale(locale.LC_TIME, "fr_FR")
+    except:
+        print("Error locale")
+    main()
