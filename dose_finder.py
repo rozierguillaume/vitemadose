@@ -8,6 +8,7 @@ import pandas as pd
 import json
 from datetime import datetime
 from datetime import timedelta
+from pathlib import Path
 
 def search_slot(url):
     opts = Options()
@@ -53,13 +54,11 @@ def fetch_centres():
     url = "https://www.data.gouv.fr/fr/datasets/r/5cb21a85-b0b0-4a65-a249-806a040ec372"
     data = requests.get(url)
 
-    with open('data/input/centres-vaccination.csv', 'wb') as f:
-          f.write(data.content)
+    Path("data/input/centres-vaccination.csv").write_bytes(data.content)
 
 def import_last_output():
     try:
-        with open("data/output/slots_dep.json", "r") as f:
-            dict_json = json.load(f)
+        dict_json = json.loads(Path("data/output/slots_dep.json").read_text())
     except:
         print("Last output not found. Starting from empty dict.")
         dict_json = {"last_dep_updated": "no"}
@@ -77,8 +76,7 @@ def export_data(dep, slots, urls, noms, departements, departements_noms):
     dict_json["departements"] = departements
     dict_json["departements_noms"] = departements_noms
 
-    with open("data/output/slots_dep.json", "w") as outfile:
-        outfile.write(json.dumps(dict_json))
+    Path("data/output/slots_dep.json").write_text(json.dumps(dict_json))
 
 def get_last_updated_dep():
     dict_json = import_last_output()
@@ -86,14 +84,14 @@ def get_last_updated_dep():
     return dict_json["last_dep_updated"]
 
 def import_departements():
-    df = pd.read_csv('data/input/departements-france.csv')
+    df = pd.read_csv(Path('data/input/departements-france.csv'))
     return df.code_departement.astype(str).to_list(), df.nom_departement.astype(str).to_list()
 
 def main():
     print("Starting...")
     fetch_centres()
     print("Centres fetched")
-    df = pd.read_csv('data/input/centres-vaccination.csv', sep=";", dtype={'com_cp': 'object'})
+    df = pd.read_csv(Path('data/input/centres-vaccination.csv'), sep=";", dtype={'com_cp': 'object'})
 
     df["com_cp"] = df["com_cp"].astype("str")
     df = df[df.rdv_site_web.str.match(r'(.*doctolib.*)')==True]

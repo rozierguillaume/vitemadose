@@ -13,6 +13,7 @@ from datetime import timedelta
 import sys
 import locale
 import numpy as np
+from pathlib import Path
 
 try:
     locale.setlocale(locale.LC_TIME, "fr_FR")
@@ -62,13 +63,11 @@ def fetch_centres():
     url = "https://www.data.gouv.fr/fr/datasets/r/5cb21a85-b0b0-4a65-a249-806a040ec372"
     data = requests.get(url)
 
-    with open('data/input/centres-vaccination.csv', 'wb') as f:
-          f.write(data.content)
+    Path("data/input/centres-vaccination.csv").write_bytes(data.content)
 
 def import_last_metadata(dep_min):
     try:
-        with open("data/output/temp/metadata{}.json".format(dep_min), "r") as f:
-            dict_json = json.load(f)
+        dict_json = json.loads(Path(f"data/output/temp/metadata{dep_min}.json").read_text())
     except:
         print("Metada not found. Starting from empty dict.")
         dict_json = {"last_dep_updated": "no"}
@@ -100,12 +99,12 @@ def export_data(dep, slots, urls, noms, departements, departements_noms, dep_min
         "urls_autres": urls_autres, "noms_autres": noms_autres}
     dict_json["last_dep_updated"] = dep
 
-    with open("data/output/temp/{}.json".format(dep), "w+") as outfile:
-        outfile.write(json.dumps(dict_json))
+    Path(f"data/output/temp/{dep}.json").write_text(json.dumps(dict_json))
 
     dict_metadata = {"last_dep_updated": dep}
-    with open("data/output/temp/metadata{}.json".format(dep_min), "w+") as outfile:
-        outfile.write(json.dumps(dict_metadata))
+
+    Path(f"data/output/temp/metadata{dep_min}.json").write_text(json.dumps(dict_metadata))
+
 
 def get_last_updated_dep(dep_min):
     dict_json = import_last_metadata(dep_min)
@@ -113,7 +112,7 @@ def get_last_updated_dep(dep_min):
     return dict_json["last_dep_updated"]
 
 def import_departements():
-    df = pd.read_csv('data/input/departements-france.csv')
+    df = pd.read_csv(Path('data/input/departements-france.csv'))
     return df.code_departement.astype(str).to_list(), df.nom_departement.astype(str).to_list()
 
 def main():
@@ -123,7 +122,7 @@ def main():
     print("Starting...")
     fetch_centres()
     print("Centres fetched")
-    df = pd.read_csv('data/input/centres-vaccination.csv', sep=";", dtype={'com_cp': 'object'})
+    df = pd.read_csv(Path('data/input/centres-vaccination.csv'), sep=";", dtype={'com_cp': 'object'})
 
     df["com_cp"] = df["com_cp"].astype("str")
     departements_all, departements_noms = import_departements()
